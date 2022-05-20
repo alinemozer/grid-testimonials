@@ -1,0 +1,137 @@
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    background-color: var(--neutral-color-2);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    max-width: 1440px;
+}
+
+.testimonials {
+    max-width: 1150px;
+    padding: 35px;
+    grid-gap: 25px;
+    display: grid;
+    grid: "card-1 card-1 card-2 card-3"
+          "card-4 card-5 card-5 card-3";
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.testimonials .card {
+    border-radius: 10px;
+    padding: 28px;
+    box-shadow: 10px 10px 10px rgb(167, 167, 167);
+}
+
+.card-1, .card-2, .card-5 {
+    color: var(--neutral-color-2);
+}
+
+.card-3, .card-4 {
+    color: var(--card-bg-2);
+}
+
+.testimonials .author {
+    display: flex;
+    align-items: center;
+    padding: 0 0 20px;
+}
+
+.testimonials .author .photo {
+    border-radius: 50%;
+    width: 35px;
+    margin: 0 15px 0 0;
+}
+
+.testimonials .author .author-information {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 110px;
+    row-gap: 2px;
+}
+
+.author .author-information .name {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.author .author-information .status {
+    opacity: 50%;
+}
+
+.testimonials .testimonial .highlight {
+    padding: 0 0 20px;
+}
+
+.testimonials .info-testimonial {
+    opacity: 70%;
+    line-height: 20px;
+}
+
+.card-1 {
+    grid-area: card-1;
+    background-color: var(--card-bg-1);
+}
+
+.card-1 .author .photo,
+.card-5 .author .photo {
+    border: 2px solid #A775F1;
+}
+
+.card-1.quotes {
+    position: relative;
+    z-index: 1;
+}
+
+.card-1.quotes::before {
+    position: absolute;
+    content: ' ';
+    background: url(../images/bg-pattern-quotation.svg) no-repeat;  
+    width: 150px;
+    height: 150px; 
+    right: 35px;
+    top: 1px;
+    z-index: -1;
+}
+
+.card-2 {
+    grid-area: card-2;
+    background-color: var(--card-bg-2);
+}
+
+.card-3 {
+    grid-area: card-3;
+    background-color: var(--card-bg-3);
+}
+
+.card-4 {
+    grid-area: card-4;
+    background-color: var(--card-bg-3);
+}
+
+.card-4 .highlight {
+    max-width: 180px;
+}
+
+.card-5 {
+    grid-area: card-5;
+    background-color: var(--card-bg-4);
+}
+
+.footer {
+    position: absolute;
+    bottom: 15px;
+    color: var(--card-bg-2);
+    font-size: 15px;
+}
+
+.footer .attribution a:hover {
+    color: #A775F1;
+}

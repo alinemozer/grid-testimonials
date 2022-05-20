@@ -1,0 +1,9 @@
+:root {
+    --card-bg-1: hsl(263, 55%, 52%);
+    --card-bg-2: hsl(217, 19%, 35%);
+    --card-bg-3: hsl(0, 0%, 100%);
+    --card-bg-4: hsl(219, 29%, 14%);
+
+    --neutral-color-1: hsl(0, 0%, 81%);
+    --neutral-color-2: hsl(210, 46%, 95%);
+}
