@@ -1,47 +1,50 @@
-@media (max-width: 1024px) {
-    body {
-        padding: 0 0 15px;
-        height: 100%;
-    }
+@media (max-width: 1350px) {
+  body {
+    padding: 0 0 15px;
+    height: 100%;
+  }
 
-    .testimonials {
-        grid: "card-1 card-2"
-              "card-4 card-5"
-              "card-3 ."
+  .footer {
+    display: block;
+    position: static;
+  }
 }
 
-    .testimonials .card {
-        max-width: 350px;
-    }
+@media (max-width: 1024px) {
+  .testimonials {
+    grid:
+      "card-1 card-2"
+      "card-4 card-5"
+      "card-3 .";
+  }
 
-    .footer {
-        display: block;
-        position: static;
-    }
+  .testimonials .card {
+    max-width: 350px;
+  }
 }
 
 @media (max-width: 860px) {
-    .testimonials {
-        grid: "card-1"
-              "card-2"
-              "card-4"
-              "card-5"
-              "card-3"
-}
+  .testimonials {
+    grid:
+      "card-1"
+      "card-2"
+      "card-4"
+      "card-5"
+      "card-3";
+  }
 }
 
 @media (max-width: 445px) {
-    .testimonials {
-        padding: 25px 20px 45px;
-        gap: 20px;
-    }
+  .testimonials {
+    padding: 25px 20px 45px;
+    gap: 20px;
+  }
 
-    .card-1.quotes::before {
-        right: -15px;
-    }
+  .card-1.quotes::before {
+    right: -15px;
+  }
 
-    .footer {
-        font-size: 11px;
-    }    
+  .footer {
+    font-size: 11px;
+  }
 }
-
